@@ -24,7 +24,7 @@
         <p class="font-lato-light">
           Sound useful? Subscribe to our mailing list to let us know you're interested!
         </p>
-        <a class="px-8 py-2 rounded bg-accent text-primary w-fit" href="#footer">Sign me up!</a>
+        <a class="button" href="#footer">Sign me up!</a>
       </div>
       <div class="md:w-1/2 flex-shrink-0">
         <img src="./images/band-on-stage.webp" alt="Band performing on stage" />
@@ -82,9 +82,26 @@
       </div>
     </section>
 
-    <section class="flex items-center justify-center p-12 bg-white text-primary">
+    <section class="flex flex-col items-center justify-center p-12 bg-white text-primary">
       <div class="text-xl">Get updates about Bandspace</div>
-      <!-- CONTACT FORM -->
+      <form
+        class="w-full mt-4 text-center max-w-lg"
+        action="https://fabform.io/f/deHZEj4"
+        method="POST"
+      >
+        <div class="flex flex-col md:flex-row gap-2">
+          <input
+            class="input"
+            required
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Name"
+          />
+          <input class="input" required name="email" type="email" placeholder="Email" />
+        </div>
+        <button class="button mt-4" type="submit">Subscribe</button>
+      </form>
     </section>
 
     <footer id="footer" class="flex justify-center pt-16 pb-8">
