@@ -1,0 +1,17 @@
+{
+  "name": "bandspace-static",
+  "version": "1.0.0",
+  "description": "Bandspace static website",
+  "main": "public/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbise1993/bandspace-static.git"
+  },
+  "author": "Matt Bise",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./public/index.css -o ./public/index.out.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

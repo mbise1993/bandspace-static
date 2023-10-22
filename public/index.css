@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: lato-regular;
   src: url('./fonts/lato/Lato-Regular.ttf');
@@ -18,145 +22,10 @@
   --color-accent: #51fa9f;
 }
 
-/* Structure */
-body {
-  color: white;
-  background-color: var(--color-primary);
-  font-family: lato-regular, sans-serif;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2.4rem;
-  font-family: lato-thin, sans-serif;
-}
-
-header h1 {
-  font-size: 2.4rem;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-}
-
 .panel {
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.panel-image {
-  max-height: 860px;
-}
-
-.lead-panel {
-  padding: 2rem;
-}
-
-.lead-panel h2 {
-  color: var(--color-accent);
-  font-size: 2.4rem;
-  line-height: 3rem;
-}
-
-.lead-panel p {
-  margin-top: 2rem;
-  font-family: lato-light;
-  line-height: 1.8rem;
-}
-
-.lead-panel a {
-  margin-top: 3rem;
-  padding: 0.6rem 1rem;
-  color: var(--color-primary);
-  background-color: var(--color-accent);
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-.details-panel {
-  padding: 2rem;
-  color: var(--color-primary);
-  background-color: white;
-}
-
-.details-panel h3 {
-  font-size: 2rem;
+  @apply md:w-1/2 flex-shrink-0 flex flex-col items-center justify-center p-8 pb-12 md:p-12 md:text-center;
 }
 
 .detail-item {
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  text-align: left;
-}
-
-.detail-item img {
-  height: 2.6rem;
-}
-
-.detail-item h4 {
-  font-size: 1.4rem;
-}
-
-.detail-item p {
-  margin-top: 1rem;
-  font-family: lato-light;
-}
-
-.subscribe-section {
-  padding: 8rem 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-primary);
-  background-color: white;
-}
-
-.subscribe-section p {
-  font-size: 1.4rem;
-}
-
-footer {
-  padding: 6rem 4rem 2rem 4rem;
-  display: flex;
-  justify-content: center;
-  font-family: lato-light;
-  font-size: 0.8rem;
-}
-
-@media only screen and (min-width: 768px) {
-  section {
-    flex-direction: row;
-  }
-
-  .panel {
-    width: 50%;
-  }
-
-  .lead-panel {
-    padding: 4rem;
-    text-align: center;
-  }
-
-  .lead-panel h2 {
-    font-size: 4.4rem;
-    line-height: 5.6rem;
-  }
-
-  .details-panel {
-    padding: 4rem;
-    text-align: center;
-  }
-
-  .details-panel h3 {
-    font-size: 2.6rem;
-  }
+  @apply flex gap-4 md:gap-8 text-left;
 }
